@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convertor Valutar</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -12,7 +12,7 @@
     <h2>Convertor Valutar</h2>
 
     <label for="amount">Suma de convertit</label>
-    <input type="number" id="amount" placeholder="Introdu suma..." required>
+    <input type="number" id="amount" placeholder="Introdu suma..." min="0" required>
 
     <label for="from_currency">Din valuta</label>
     <select id="from_currency" required>
@@ -23,20 +23,16 @@
         <img src="images/images.png" alt="swap icon" class="icon">
     </button>
 
-    <!-- Select dropdown pentru valuta de destinatie -->
     <label for="to_currency">În valuta</label>
     <select id="to_currency" required>
         <option value="">Alege valuta</option>
-        <!-- Valutele vor fi generate dinamic cu JavaScript -->
     </select>
 
-    <!-- Butoane de control -->
     <div>
         <button id="convert">Calculează</button>
         <button id="reset">Resetează</button>
     </div>
 
-    <!-- Rezultatul conversiei -->
     <h3 id="result"></h3>
 </div>
 
